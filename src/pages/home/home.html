@@ -4,21 +4,67 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header >
-  <ion-toolbar left>
-    <ion-title>Subheader</ion-title>
-  </ion-toolbar>
-
+<ion-header class="home-header header-bg">
+    <ion-toolbar color="primary">
+        <ion-grid no-padding>
+            <ion-row>
+                <ion-col col-3 text-center ><img src="assets/imgs/logo-home.png" alt="LOGO" width="70" class="home-logo"></ion-col>
+                <ion-col col-9><ion-searchbar></ion-searchbar></ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-toolbar>
 </ion-header>
-<!--<ion-header>
-
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-
-</ion-header>-->
-
-
-<ion-content padding>
-
+<ion-content no-padding class="home-content">
+    <!--banner-->
+    <div class="banner">
+        <ion-slides pager >
+            <ion-slide>
+                <img src="https://static.soufeel.com/skin/frontend/smartwave/default/custom/static/brand/activity/valentines-day-gift-sale/home-valentines-day-gift-sale-mobile.jpg" alt="" >
+            </ion-slide>
+            <ion-slide>
+                <img src="https://static.soufeel.com/skin/frontend/smartwave/default/custom/static/brand/activity/valentines-day-gift-sale/home-valentines-day-gift-sale-mobile.jpg" alt="" >
+            </ion-slide>
+            <ion-slide>
+                <img src="https://static.soufeel.com/skin/frontend/smartwave/default/custom/static/brand/activity/valentines-day-gift-sale/home-valentines-day-gift-sale-mobile.jpg" alt="">
+            </ion-slide>
+        </ion-slides>
+    </div>
+    <!--home small category-->
+    <div class="home-small-category" margin-top>
+        <ion-grid>
+            <ion-row>
+                <ion-col col-3 text-center >
+                    <a href="">
+                    <img src="assets/imgs/category-woman.png"  alt="">
+                    <span>Woman</span>
+                    </a>
+                </ion-col>
+                <ion-col col-3 text-center >
+                    <a href="">
+                    <img src="assets/imgs/category-man.png"  alt="">
+                    <span>Man</span>
+                    </a>
+                </ion-col>
+                <ion-col col-3 text-center >
+                    <a href="">
+                    <img src="assets/imgs/category-child.png"  alt="">
+                    <span>Child</span>
+                    </a>
+                </ion-col>
+                <ion-col col-3 text-center >
+                    <a href="">
+                    <img src="assets/imgs/category-electronic.png"  alt="">
+                    <span>Electronic</span>
+                    </a>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <!--how flash sale-->
+    <div class="block-title">
+        <span class="right-guide"><ion-icon name="flash"></ion-icon> Flash Sale ></span>
+    </div>
+    <div class="home-flash-sale">
+        <img src="https://static.soufeel.com/skin/frontend/smartwave/default/images/new-home/new_home_bg_mobile_1.jpg" alt="">
+    </div>
 </ion-content>
