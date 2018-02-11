@@ -26,3 +26,11 @@
     padding-right: 10px;
   }
 }
+
+// Images
+// Responsive images (ensure images don't scale beyond their parents)
+.img-responsive {
+  display: block;
+  width: 100%;
+  height: auto;
+}
